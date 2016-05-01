@@ -7,4 +7,13 @@
     <string name="mensaje">Favorito :)</string>
     <string name="texto_accion">Acción</string>
 
+    <!-- Datos para refresh indicator -->
+    <string-array name="planetas">
+        <item>Mecurio</item>
+        <item>Venus</item>
+        <item>Tierra</item>
+        <item>Marte</item>
+        <item>Jupiter</item>
+    </string-array>
+
 </resources>
