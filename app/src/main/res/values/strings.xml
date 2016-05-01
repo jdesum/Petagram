@@ -2,4 +2,8 @@
     <string name="app_name">Petagram</string>
     <string name="texto_titulo">Hola Mundo!</string>
     <string name="texto_boton_click">Click</string>
+
+    <!-- Mensaje a mostrar -->
+    <string name="mensaje">Favorito :)</string>
+
 </resources>
