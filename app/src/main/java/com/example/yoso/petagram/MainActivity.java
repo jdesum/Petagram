@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -30,7 +31,15 @@ public class MainActivity extends AppCompatActivity {
                 // Toast.makeText(MainActivity.this, getResources().getString(R.string.mensaje), Toast.LENGTH_SHORT).show();
 
                 // Mensaje Snackbar
-                Snackbar.make(v, getResources().getString(R.string.mensaje), Snackbar.LENGTH_SHORT).show();
+                Snackbar.make(v, getResources().getString(R.string.mensaje), Snackbar.LENGTH_LONG)
+                        .setAction(getResources().getString(R.string.texto_accion), new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                // Cuando hace click
+                                Log.i("SNACKBAR", "Click en Snackbar");
+                            }
+                        })
+                        .show();
 
 
             }
