@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
                                 Log.i("SNACKBAR", "Click en Snackbar");
                             }
                         })
+                        // Cambiar el color el texto
+                        .setActionTextColor(getResources().getColor(R.color.colorPrimary))
                         .show();
 
 
